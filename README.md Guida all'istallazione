@@ -1,0 +1,28 @@
+Guida all'installazione e al funzionamento del progetto
+Per far funzionare correttamente l'analisi delle recensioni, segui questi passaggi nell'ordine indicato:
+
+1. Requisiti necessari
+Il programma richiede Python installato sul computer. Prima di avviarlo, è necessario installare le librerie utilizzate per il calcolo e l'interfaccia grafica. Apri il terminale e digita:
+pip install pandas numpy matplotlib seaborn scikit-learn gradio
+
+2. I file del progetto
+Assicurati di avere nella cartella di lavoro il file principale:
+
+analizzatore_recensioni.py (che contiene tutto il codice di elaborazione).
+
+3. Avvio del programma
+Sempre dal terminale, all'interno della cartella dove si trova il file, lancia il comando:
+python analizzatore_recensioni.py
+
+4. Gestione automatica dei risultati
+Una volta avviato, il file analizzatore_recensioni.py eseguirà le seguenti operazioni in automatico:
+
+Creerà una cartella chiamata results.
+
+Salverà dentro la cartella i dataset in formato CSV (dataset_training.csv e dataset_test.csv).
+
+Genererà i grafici delle performance (confusion_matrix.png e f1_bars.png).
+
+5. Utilizzo dell'interfaccia
+Al termine dell'elaborazione, il terminale mostrerà un indirizzo locale (esempio: http://127.0.0.1:7860). Copia questo indirizzo nel tuo browser per aprire la dashboard interattiva.
+Da qui potrai inserire una recensione e cliccare su "Analizza Feedback" per vedere il reparto assegnato e la percentuale di sentiment rilevata.
